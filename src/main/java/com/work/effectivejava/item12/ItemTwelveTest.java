@@ -1,12 +1,20 @@
 package com.work.effectivejava.item12;
 
+import com.work.effectivejava.item13.GüvenliKod;
+
 import java.util.ArrayList;
 
 import java.util.Collections;
 
-public class ItemTwelveTest {
+public class ItemTwelveTest extends GüvenliKod {
 
     public  static void  main(String [] args){
+
+
+        //Ama bu sefer Bu sınıfın içinden bir nesne yaratırım
+        ItemTwelveTest it = new ItemTwelveTest();
+        it.message2();
+        //
 
         ArrayList<Kitap> kitapListesi = new ArrayList<>();
         kitapListesi.add(new Kitap("Tarihi",500));
@@ -20,6 +28,7 @@ public class ItemTwelveTest {
             System.out.println(kitap.toString());
         }
 
+
         //Sıralama2
 
         System.out.println("Sıralama2");
@@ -29,6 +38,11 @@ public class ItemTwelveTest {
         for(Kitap kitap: kitapListesi){
             System.out.println(kitap.toString());
         }
+
+    }
+//Extend edilen sınıflar bunu implemente etmesi lazım
+    @Override
+    public void message3() {
 
     }
 }
