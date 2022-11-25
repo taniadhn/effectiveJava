@@ -1,4 +1,4 @@
-package com.work.effectivejava.item41;
+package com.work.effectivejava.item49;
 
 
 //NullCheck bizim için yapılmıştı yapılmasaydı nasıl yapılırdı

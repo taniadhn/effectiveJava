@@ -1,4 +1,4 @@
-package com.work.effectivejava.item41;
+package com.work.effectivejava.item49;
 
 import java.math.BigInteger;
 
