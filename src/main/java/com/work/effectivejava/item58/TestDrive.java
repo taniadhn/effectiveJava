@@ -11,11 +11,17 @@ public class TestDrive {
         for(int i=0; i< arr.length; i++){
 
             System.out.println(arr[i]);
+            if(arr[i] == 2)
+            {
+                //listedeki elemanlarda değişiklik yapmak için kullanılır
+                arr[i] = 2+3;
+            }
         }
 
         System.out.println("######");
 
         /**Integer Type'inda eleman olarak tanımladığım şu Array içinde  parçaları dönecem*/
+        //sadece ileriye dönük çalışmak istesem foreach benim için uygundur
         for (int eleman : arr) {
 
             System.out.println(eleman);
